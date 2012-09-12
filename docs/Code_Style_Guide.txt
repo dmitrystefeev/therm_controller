@@ -1,0 +1,33 @@
+TBD
+
+
+1. 1 tab == 4 spaces! 
+2. Use uuid as include guard
+3. Use Javadoc doxygen comments:
+http://en.wikipedia.org/wiki/Javadoc
+http://www.stack.nl/~dimitri/doxygen/commands.html
+
+e.g.:
+/** @defgroup Test functions
+  * This is the test group
+  * @{
+  */
+  
+/**
+  * @brief  Do foo.
+  * @param  a: specifies a
+  *    This parameter can be one of the following values:
+  *     @arg RESET_A
+  *     @arg SET_A
+  * @param  b: specifies b
+  *   This parameter can be (0..15).
+  * @note If a is RESET_A b may be any
+  * @retval The output value.
+  */
+uint8_t foo(uint16_t a, uint16_t b)
+
+/**
+  * @}
+  */
+  
+  
